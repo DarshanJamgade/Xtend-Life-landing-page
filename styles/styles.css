@@ -95,6 +95,10 @@ nav .dropdown-menu li a {
   margin-right: 6vw;
 }
 
+nav .user {
+  display: flex;
+}
+
 .user img {
   background-color: var(--bg-color);
   padding: 8px;
@@ -632,6 +636,7 @@ nav .dropdown-menu li a {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-right: 2rem;
 }
 
 .services .service__about {
@@ -949,6 +954,74 @@ input:focus::-webkit-input-placeholder {
   margin-right: 0;
 }
 
+@media (max-width: 425px) {
+  .contact-num {
+    margin: 0.5rem 0;
+  }
+  .contact-num h6 {
+    text-align: center;
+    width: 100%;
+  }
+  .contact-num h5 {
+    width: 100%;
+  }
+  .contact-num img,
+  .search img {
+    background-color: var(--bg-color);
+    width: 45px;
+    padding: 0.75rem;
+    border-radius: 50%;
+  }
+  .about-us__services .supplement {
+    margin-top: 5rem;
+  }
+
+  .health-center {
+    margin-top: 5rem;
+  }
+
+  .cards {
+    align-items: center;
+  }
+
+  .testimonial .glider-track {
+    width: 320% !important;
+  }
+
+  .testimonial .test__content p {
+    max-width: 15rem;
+  }
+  .testimonial .test__image {
+    width: 8rem;
+    height: 8rem;
+  }
+  .testimonial .test__content {
+    margin-left: 0.75rem;
+  }
+  .testimonial .test__content p {
+    max-width: 13rem;
+  }
+
+  .services .service .service__about {
+    transform: translateX(-2rem);
+  }
+
+  .blogs .glider-track {
+    width: 150% !important;
+  }
+
+  .blogs .glider-track .glider-slide {
+    margin-right: 1rem;
+  }
+
+  .glider-prev {
+    margin-left: 2rem;
+  }
+  .glider-next {
+    margin-right: 4rem;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -976,6 +1049,7 @@ input:focus::-webkit-input-placeholder {
   }
   .about-us__services .service {
     width: 100%;
+    margin-top: 0;
   }
 
   .health-center .title {
@@ -1025,11 +1099,6 @@ input:focus::-webkit-input-placeholder {
   .services .container-md {
     flex-direction: column;
   }
-  .services .service__about {
-    color: white;
-    margin-left: 0;
-  }
-
   .services .service__about {
     color: white;
     margin-left: 0;
